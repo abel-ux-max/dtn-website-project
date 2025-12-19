@@ -10,34 +10,43 @@
     width: 100%;
     height: fit-content;
     position: relative;
+      background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    min-height: 500px;
 }
-#logotip {
-    position: relative;
 
-       
-  pointer-events: none;
-  
-
-  
-}
-  @keyframes float {
-    0%   { transform: translate(-50%, -52%); }
-    50%  { transform: translate(-50%, -48%); }
-    100% { transform: translate(-50%, -52%); }
-  }
 #container{
 position: absolute;
 z-index: 9999;
 left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* centriranje glede na center */
-    width: 40%; /* prilagodi velikost */
-    height: auto;
-    z-index: 10; /* nad PNG */
-    pointer-events: none; /* če nočeš, da logo križa klik */
-    filter: drop-shadow(0 8px 20px rgba(46, 46, 46, 0.616)); /* senca */
-    will-change: transform;
-    animation: float 4s ease-in-out infinite;
+top: 50%;
+transform: translate(-50%, -50%); 
+width: 40%; 
+height: auto;
+z-index: 10;
+pointer-events: visibleStroke;
+filter: drop-shadow(0 8px 20px rgba(46, 46, 46, 0.616)); /* senca */
+transition: filter 0.4s ease-in-out;
 }
 
+.members img{
+  transition: opacity 0.2s;
+}
+.members img:hover{
+  opacity: 0.75;
+}
 
+.w3-top{
+  z-index: 11;
+}
+#container:hover{
+    filter: drop-shadow(0 8px 20px rgba(255, 255, 255, 0.418)); /* senca */
+}
+.hover-transition{
+  transition: background-color 1s ease-out ;
+}
+.city{
+  transition: opacity 0.4s ease-in-out;
+}

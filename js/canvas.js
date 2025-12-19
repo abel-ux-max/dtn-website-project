@@ -18,11 +18,13 @@ ctx.save();
 ctx.font="   15px ''";
 ctx.translate(-271.09352,-267.82733);
 ctx.save();
+
+// D - Bela obroba 
 ctx.fillStyle="#ffffff";
 ctx.fillStyle="rgba(255, 255, 255, 1)";
 ctx.strokeStyle="rgba(0,0,0,0)";
 ctx.font="   15px ''";
-ctx.beginPath();
+ctx.beginPath(); 
 ctx.moveTo(324.668,127.199);
 ctx.lineTo(634.531,313.172);
 ctx.lineTo(581.707,635.309);
@@ -60,7 +62,9 @@ ctx.closePath();
 ctx.moveTo(551.2660000000001,408.81600000000003);
 ctx.lineTo(503.2890000000001,306.32800000000003);
 ctx.lineTo(561.2930000000001,339.90600000000006);
-ctx.closePath();
+ctx.closePath(); 
+
+// D - črna obroba
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
@@ -68,7 +72,7 @@ ctx.save();
 ctx.fillStyle="rgba(0, 0, 0, 1)";
 ctx.strokeStyle="rgba(0,0,0,0)";
 ctx.font="   15px ''";
-ctx.beginPath();
+ctx.beginPath(); 
 ctx.moveTo(338.844,149.707);
 ctx.lineTo(621.367,319.273);
 ctx.lineTo(572.723,615.945);
@@ -111,6 +115,8 @@ ctx.moveTo(554.316,429.488);
 ctx.lineTo(489.75,291.555);
 ctx.lineTo(567.816,336.75);
 ctx.closePath();
+
+// T - Bela obroba
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
@@ -160,6 +166,8 @@ ctx.lineTo(1063.598,299.672);
 ctx.lineTo(1072.547,275.863);
 ctx.lineTo(1127.332,130.102);
 ctx.closePath();
+
+// T - črna obroba
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
@@ -205,6 +213,8 @@ ctx.lineTo(1001.9690000000003,251.44500000000005);
 ctx.lineTo(1060.8590000000004,215.64100000000005);
 ctx.lineTo(1066.9220000000005,273.75000000000006);
 ctx.closePath();
+
+// N - Bela obroba
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
@@ -250,6 +260,8 @@ ctx.lineTo(893.8199999999999,237.121);
 ctx.lineTo(912.3749999999999,226.20700000000002);
 ctx.lineTo(1121.5269999999998,103.20700000000002);
 ctx.closePath();
+
+// N - Črna Obroba
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
