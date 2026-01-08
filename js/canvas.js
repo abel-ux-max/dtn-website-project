@@ -10,7 +10,7 @@ ctx.strokeStyle="rgba(0,0,0,0)";
 ctx.miterLimit=4;
 ctx.font="15px ''";
 ctx.font="   15px ''";
-ctx.scale(0.5,0.5);
+ctx.scale(0.15,0.15);
 ctx.save();
 ctx.font="   15px ''";
 ctx.transform(1.3333333,0,0,1.3333333,-48.500637,234.41511);

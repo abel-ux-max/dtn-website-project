@@ -7,9 +7,6 @@ body, html{
     display: grid;  
     grid-template-columns: repeat(4, 1fr);
 }
-.members{
-
-}
 #slideshow{
     width: 100%;
     height: fit-content;
@@ -54,8 +51,18 @@ transition: filter 0.4s ease-in-out;
 .city{
   transition: opacity 0.4s ease-in-out;
 }
-.hero{
-width:100%;
-height: auto;
-background-attachment: fixed;
+.contact{
+   position: relative;
+    display: grid;  
+    grid-template-columns: repeat(3,30vw);
+}
+#mycanvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .center{
+   align-items: center;
+   display: flex;
+   justify-content: center;
 }
