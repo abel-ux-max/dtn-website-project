@@ -1,6 +1,9 @@
-body, html{
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap'); 
+*{
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  font-family: "Source Sans 3", sans-serif;
+  scroll-behavior: smooth;
 }
 .bandmembers{
     position: relative;
@@ -57,9 +60,17 @@ transition: filter 0.4s ease-in-out;
     grid-template-columns: repeat(3,30vw);
 }
 #mycanvas{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.canvaslogo{
+position: absolute;
+z-index: 9999;
+left: -50%;
+top: 50%;
+transform: translate(-50%, -50%); 
+transition: left 1s;
+}
+.canvaslogo:hover{
+  left:-20%;
 }
 .contact .center{
    align-items: center;
