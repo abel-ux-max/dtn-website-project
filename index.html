@@ -1,306 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>DTN</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+  <title>DTN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/favicon.ico" type="image/icon-x">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large hover-transition">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small hover-transition">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small hover-transition">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small hover-transition">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button hover-transition" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>  
-    
-  </div>
-</div>
+  <!-- Navbar -->
+  <div class="top-nav">
+    <div class="nav-bar">
+      <a class="nav-item nav-toggle" href="javascript:void(0)" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large hover-transition" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large " onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large hover-transition" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large hover-transition" onclick="myFunction()">MERCH</a>
-</div>
+      <a href="#" class="nav-item">HOME</a>
+      <a href="#band" class="nav-item hide-small">BAND</a>
+      <a href="#music" class="nav-item hide-small">MUSIC</a>
+      <a href="#tour" class="nav-item hide-small">TOUR</a>
+      <a href="#contact" class="nav-item hide-small">CONTACT</a>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:3000px;margin-top:46px;position:relative;">
-
-
-<div id="slideshow">
-  <div id="container" >
-<svg id="logotip" 
-width="100%"
-   height="100%"
-   viewBox="0 0 1110.7292 879.24933">
-   
-   version="1.1"
-   id="svg1"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs306" />
-  <g
-     id="g310"
-     transform="matrix(1.3333333,0,0,1.3333333,-48.500637,234.41511)">
-    <g
-       id="g312"
-       style="display:inline"
-       transform="translate(-271.09352,-267.82733)">
-      <path
-         d="M 324.668,127.199 634.531,313.172 581.707,635.309 407.969,531.227 535.141,542.574 541.402,503.055 431.055,259.266 375.098,231.098 344.574,338.309 324.668,127.199 m 229.648,302.289 13.5,-92.738 -78.066,-45.195 64.566,137.933 m -236.738,-313.539 1.121,11.813 19.903,211.109 3,31.801 8.746,-30.719 28.539,-100.23 47.578,23.953 108.734,240.219 -5.105,32.207 -121.59,-10.856 -26.063,-2.324 22.446,13.449 173.738,104.09 7.574,4.539 1.434,-8.715 52.82,-322.14 0.66,-4.02 -3.492,-2.094 -309.863,-185.976 z m 233.688,292.867 -47.977,-102.488 58.004,33.578 z"
-         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         id="path316" />
-      <path
-         d="m 338.844,149.707 282.523,169.566 -48.644,296.672 -113.684,-68.109 75.035,6.699 11.168,0.996 1.754,-11.07 6.266,-39.516 0.562,-3.547 -1.488,-3.277 -110.348,-243.797 -1.746,-3.863 -3.789,-1.902 -55.957,-28.172 -12.957,-6.524 -3.976,13.957 -13.036,45.774 -11.683,-123.887 m 221.578,321.137 5.769,-39.625 13.5,-92.735 1.168,-8.043 -7.035,-4.07 -78.058,-45.195 -33.09,-19.156 16.207,34.628 64.566,137.93 16.973,36.266 m -235.754,-343.645 19.906,211.11 30.524,-107.211 55.957,28.168 110.347,243.789 -6.261,39.519 -127.172,-11.347 173.738,104.082 52.824,-322.137 z M 554.316,429.488 489.75,291.555 567.816,336.75 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         id="path318" />
-      <path
-         d="m 1121.707,127.988 -54.785,145.762 -6.063,-58.109 -58.89,35.804 117.781,330.254 -239.871,-237.711 37.566,212.864 79.043,0.203 -128.933,77.281 -74.153,-442.762 194.477,200.539 -55.563,-156.711 189.391,-107.414 m 11.445,-13.386 -14.398,8.164 -189.391,107.418 -4.375,2.48 1.684,4.742 46.363,130.778 -175.32,-180.789 -13.402,-13.821 3.179,18.989 74.153,442.761 1.457,8.68 7.543,-4.524 128.933,-77.281 18.5,-11.09 -21.566,-0.054 -74.028,-0.188 -33.41,-189.32 226.453,224.422 18.735,18.562 -8.856,-24.84 -116.14,-325.652 46.613,-28.34 5.078,48.68 2.641,25.293 8.949,-23.809 54.785,-145.761 z"
-         style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         id="path322" />
-      <path
-         d="m 1098.824,154.762 -25.246,67.164 -0.785,-7.531 -1.965,-18.864 -16.199,9.848 -58.891,35.805 -8.355,5.078 3.285,9.211 100.059,280.566 -202.403,-200.578 -26.828,-26.59 6.563,37.203 37.566,212.864 1.746,9.886 10.043,0.02 35.895,0.09 -76.829,46.05 -64.882,-387.418 167.664,172.895 38.316,39.512 -18.39,-51.879 -52.2,-147.223 151.836,-86.109 m 22.883,-26.774 -189.391,107.414 55.563,156.711 -194.477,-200.539 74.153,442.762 128.933,-77.281 -79.043,-0.203 -37.566,-212.864 239.871,237.711 -117.781,-330.254 58.89,-35.804 6.063,58.109 z"
-         style="display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99975;stroke-dasharray:none"
-         id="path324" />
-      <path
-         d="m 1118.477,98.016 -209.153,123 34.039,-63 H 755.348 L 816.781,543.449 723.652,737.543 630.914,543.254 692.152,158.016 H 504.719 L 539.152,221.211 329.52,98.016 h 788.957 m 22.039,-6 H 307.469 l 19.015,11.175 209.629,123.196 18.668,10.972 -10.355,-19.011 -29.602,-54.325 h 170.301 l -60.137,378.293 -0.289,1.848 0.801,1.688 92.738,194.285 5.399,11.316 5.422,-11.301 93.129,-194.093 0.808,-1.688 -0.293,-1.851 -60.32,-378.489 h 170.926 l -29.258,54.153 -10.231,18.937 18.555,-10.914 209.152,-123 z"
-         style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         id="path328" />
-      <path
-         d="m 1074.398,110.016 -134.054,78.843 13.582,-25.132 9.57,-17.711 H 741.293 l 2.211,13.89 60.84,381.735 -80.66,168.105 -80.332,-168.293 60.652,-381.555 2.203,-13.882 H 484.516 l 9.668,17.746 13.707,25.164 -134.262,-78.91 h 700.769 m 44.079,-12 H 329.52 l 209.632,123.195 -34.433,-63.195 h 187.433 l -61.238,385.238 92.738,194.289 93.129,-194.094 -61.433,-385.433 h 188.015 l -34.039,63 z"
-         style="display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         id="path330" />
-    </g>
-  </g>
-</svg>
-</div>
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="img/image1.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Ajdovščina</h3>
-      <p><b> Pale </b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="img/image2.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Nova Gorica</h3>
-      <p><b>Mostovna</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="img/image3.png" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Ljubljana</h3>
-      <p><b>Gromka</b></p>    
-    </div>
-  </div>
-</div>
-
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:80%" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">
-      We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="bandmembers">
-      <div class="members">
-        <p>Abel Elersič</p>
-        <img src="img/member1.png" class="w3-round w3-margin-bottom" alt="member1" style="width:60%;">
-      </div>
-      <div class="members">
-        <p>Enej Lango</p>
-        <img src="img/member2.jpg" class="w3-round w3-margin-bottom" alt="member2" style="width:60%;">
-      </div>
-      <div class="members">
-        <p>Aljaž Pekeč</p>
-        <img src="img/member3.png" class="w3-round" alt="member3" style="width:60%;">
-      </div>
-      <div class="members">
-        <p>Aleks Hvala</p>
-        <img src="img/member4.jpg" class="w3-round" alt="member4" style="width:60%;">
-      </div>
-    </div>
-  </div>
-<div class="hero">
-
-</div>
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Upcoming Gigs!</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom city">
-          <img src="img/city1.png" alt="Ljubljana" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Ljubljana</b></p>
-            <p class="w3-opacity">6 March 2026</p>
-            <p>Menza pri Koritu</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom city">
-          <img src="img/city2.png" alt="maribor" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Maribor</b></p>
-            <p class="w3-opacity">20 March 2026</p>
-            <p>Dvorana Gusta Pekarnaf</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom city">
-          <img src="img/city3.png" alt="Nova Gorica" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Nova Gorica</b></p>
-            <p class="w3-opacity">16 April 2026</p>
-            <p>Mostovna</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
+      <div class="dropdown hide-small">
+        <button class="nav-item drop-btn">
+          MORE <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Merchandise</a>
+          <a href="#">Extras</a>
+          <a href="#">Media</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container  w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="mobile-menu">
+    <a href="#band" onclick="toggleMenu()">BAND</a>
+    <a href="#music" onclick="toggleMenu()">MUSIC</a>
+    <a href="#tour" onclick="toggleMenu()">TOUR</a>
+    <a href="#contact" onclick="toggleMenu()">CONTACT</a>
+    <a href="#" onclick="toggleMenu()">MERCH</a>
   </div>
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    
-     <div class="contact">
+  <!-- Page content -->
+  <div class="main page-wrapper" style="max-width:3000px;margin-top:46px;position:relative;">
+    <div id="slideshow">
+      <div id="container">
+        <svg id="logotip" width="100%" height="100%" viewBox="0 0 1110.7292 879.24933">
 
-          <div class="canvaslogo">
-            <canvas id="myCanvas" width="556" height="440"></canvas>
-            <script src="js/canvas.js"></script> 
-          </div>
-      <div class="contactInfo">
-        <i class="fa fa-map-marker" style="width:30px"></i> Nova Gorica, Slovenija <br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +386 15 303 000<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: banddtn@gmail.com <br>
+          version="1.1"
+          id="svg1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg">
+          <defs id="defs306" />
+          <g id="g310" transform="matrix(1.3333333,0,0,1.3333333,-48.500637,234.41511)">
+            <g id="g312" style="display:inline" transform="translate(-271.09352,-267.82733)">
+              <path
+                d="M 324.668,127.199 634.531,313.172 581.707,635.309 407.969,531.227 535.141,542.574 541.402,503.055 431.055,259.266 375.098,231.098 344.574,338.309 324.668,127.199 m 229.648,302.289 13.5,-92.738 -78.066,-45.195 64.566,137.933 m -236.738,-313.539 1.121,11.813 19.903,211.109 3,31.801 8.746,-30.719 28.539,-100.23 47.578,23.953 108.734,240.219 -5.105,32.207 -121.59,-10.856 -26.063,-2.324 22.446,13.449 173.738,104.09 7.574,4.539 1.434,-8.715 52.82,-322.14 0.66,-4.02 -3.492,-2.094 -309.863,-185.976 z m 233.688,292.867 -47.977,-102.488 58.004,33.578 z"
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path316" />
+              <path
+                d="m 338.844,149.707 282.523,169.566 -48.644,296.672 -113.684,-68.109 75.035,6.699 11.168,0.996 1.754,-11.07 6.266,-39.516 0.562,-3.547 -1.488,-3.277 -110.348,-243.797 -1.746,-3.863 -3.789,-1.902 -55.957,-28.172 -12.957,-6.524 -3.976,13.957 -13.036,45.774 -11.683,-123.887 m 221.578,321.137 5.769,-39.625 13.5,-92.735 1.168,-8.043 -7.035,-4.07 -78.058,-45.195 -33.09,-19.156 16.207,34.628 64.566,137.93 16.973,36.266 m -235.754,-343.645 19.906,211.11 30.524,-107.211 55.957,28.168 110.347,243.789 -6.261,39.519 -127.172,-11.347 173.738,104.082 52.824,-322.137 z M 554.316,429.488 489.75,291.555 567.816,336.75 Z"
+                style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path318" />
+              <path
+                d="m 1121.707,127.988 -54.785,145.762 -6.063,-58.109 -58.89,35.804 117.781,330.254 -239.871,-237.711 37.566,212.864 79.043,0.203 -128.933,77.281 -74.153,-442.762 194.477,200.539 -55.563,-156.711 189.391,-107.414 m 11.445,-13.386 -14.398,8.164 -189.391,107.418 -4.375,2.48 1.684,4.742 46.363,130.778 -175.32,-180.789 -13.402,-13.821 3.179,18.989 74.153,442.761 1.457,8.68 7.543,-4.524 128.933,-77.281 18.5,-11.09 -21.566,-0.054 -74.028,-0.188 -33.41,-189.32 226.453,224.422 18.735,18.562 -8.856,-24.84 -116.14,-325.652 46.613,-28.34 5.078,48.68 2.641,25.293 8.949,-23.809 54.785,-145.761 z"
+                style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path322" />
+              <path
+                d="m 1098.824,154.762 -25.246,67.164 -0.785,-7.531 -1.965,-18.864 -16.199,9.848 -58.891,35.805 -8.355,5.078 3.285,9.211 100.059,280.566 -202.403,-200.578 -26.828,-26.59 6.563,37.203 37.566,212.864 1.746,9.886 10.043,0.02 35.895,0.09 -76.829,46.05 -64.882,-387.418 167.664,172.895 38.316,39.512 -18.39,-51.879 -52.2,-147.223 151.836,-86.109 m 22.883,-26.774 -189.391,107.414 55.563,156.711 -194.477,-200.539 74.153,442.762 128.933,-77.281 -79.043,-0.203 -37.566,-212.864 239.871,237.711 -117.781,-330.254 58.89,-35.804 6.063,58.109 z"
+                style="display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99975;stroke-dasharray:none"
+                id="path324" />
+              <path
+                d="m 1118.477,98.016 -209.153,123 34.039,-63 H 755.348 L 816.781,543.449 723.652,737.543 630.914,543.254 692.152,158.016 H 504.719 L 539.152,221.211 329.52,98.016 h 788.957 m 22.039,-6 H 307.469 l 19.015,11.175 209.629,123.196 18.668,10.972 -10.355,-19.011 -29.602,-54.325 h 170.301 l -60.137,378.293 -0.289,1.848 0.801,1.688 92.738,194.285 5.399,11.316 5.422,-11.301 93.129,-194.093 0.808,-1.688 -0.293,-1.851 -60.32,-378.489 h 170.926 l -29.258,54.153 -10.231,18.937 18.555,-10.914 209.152,-123 z"
+                style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path328" />
+              <path
+                d="m 1074.398,110.016 -134.054,78.843 13.582,-25.132 9.57,-17.711 H 741.293 l 2.211,13.89 60.84,381.735 -80.66,168.105 -80.332,-168.293 60.652,-381.555 2.203,-13.882 H 484.516 l 9.668,17.746 13.707,25.164 -134.262,-78.91 h 700.769 m 44.079,-12 H 329.52 l 209.632,123.195 -34.433,-63.195 h 187.433 l -61.238,385.238 92.738,194.289 93.129,-194.094 -61.433,-385.433 h 188.015 l -34.039,63 z"
+                style="display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path330" />
+            </g>
+          </g>
+        </svg>
       </div>
-      <div class="message">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <!-- Automatic Slideshow Images -->
+      <div class="autoSlideshow">
+        <div class="autoSlide active">
+          <img src="img/image1.jpg" alt="">
+          <div class="autoCaption">
+            <h3>Ajdovščina</h3>
+            <p><b>Pale</b></p>
+          </div>
+        </div>
+
+        <div class="autoSlide">
+          <img src="img/image2.jpg" alt="">
+          <div class="autoCaption">
+            <h3>Nova Gorica</h3>
+            <p><b>Mostovna</b></p>
+          </div>
+        </div>
+
+        <div class="autoSlide">
+          <img src="img/image3.png" alt="">
+          <div class="autoCaption">
+            <h3>Ljubljana</h3>
+            <p><b>Gromka</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Band Section -->
+    <section id="band" class="band fade-in">
+      <h2 class="title">THE BAND</h2>
+      <p class="band-subtitle"><i>We love music</i></p>
+      <div class="bandmembers">
+
+        <div class="members" id="openCredits">
+          <p>Abel Elersič</p>
+          <img src="img/member1.png" alt="member1" >
+        </div>
+        <div class="members">
+          <p>Enej Lango</p>
+          <img src="img/member2.jpg" alt="member2">
+        </div>
+        <div class="members">
+          <p>Aljaž Pekeč</p>
+          <img src="img/member3.png" alt="member3">
+        </div>
+        <div class="members">
+          <p>Aleks Hvala</p>
+          <img src="img/member4.jpg" alt="member4">
+        </div>
+
+      </div>
+    </section>
+
+<section id="music" class="media fade-in">
+  <div class="media-div">
+    <div class="streaming">
+      <iframe data-testid="embed-iframe" 
+      style="border-radius:12px" 
+      src="https://open.spotify.com/embed/track/0K9anDxCcyqqUvicfZs65V?utm_source=generator&theme=0" 
+      width="25%%" 
+      height="100%" 
+      frameBorder="0" 
+      allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy" > </iframe>
+    </div>
+  </div>
+</section>
+
+    <!-- The Tour Section -->
+    <section id="tour" class="tour fade-in">
+      <div class="tour-inner">
+        <h2 class="title">Upcoming Gigs!</h2>
+        <p class="tour-subtitle"><i>Remember to book your tickets!</i></p>
+
+        <div class="tour-grid">
+          <div class="city-card">
+            <img src="img/city1.png" alt="Ljubljana">
+            <div class="city-content">
+              <p class="city-name"><b>Ljubljana</b></p>
+              <p class="city-date">6 March 2026</p>
+              <p class="city-venue">Menza pri Koritu</p>
+              <button class="ticket-btn" onclick="document.getElementById('ticketModal').style.display='block'"">Buy Tickets</button>
+        </div>
+      </div>
+
+      <div class="city-card">
+                <img src="img/city2.png" alt="Maribor">
+                <div class="city-content">
+                  <p class="city-name"><b>Maribor</b></p>
+                  <p class="city-date">20 March 2026</p>
+                  <p class="city-venue">Dvorana Gustaf Pekarna</p>
+                  <button class="ticket-btn" onclick="document.getElementById('ticketModal').style.display='block'">Buy
+                    Tickets</button>
+                </div>
             </div>
-            <div>
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+
+            <div class="city-card">
+              <img src="img/city3.png" alt="Nova Gorica">
+              <div class="city-content">
+                <p class="city-name"><b>Nova Gorica</b></p>
+                <p class="city-date">16 April 2026</p>
+                <p class="city-venue">Mostovna</p>
+                <button class="ticket-btn" onclick="document.getElementById('ticketModal').style.display='block'">Buy
+                  Tickets</button>
+              </div>
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
+        </div>
+    </section>
+
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="modal">
+      <div class="modal-overlay" onclick="closeModal()"></div>
+
+      <div class="modal-content">
+          <button class="modal-close" onclick="closeModal()">×</button>
+        <h2 class="modal-title">
+          <i class="fa fa-suitcase"></i> Tickets
+        </h2>
+
+        <div class="modal-body">
+          <label>
+            <i class="fa fa-shopping-cart"></i> Tickets, €15 per person
+          </label>
+          <input type="number" min = "0" placeholder="How many?">
+
+          <label>
+            <i class="fa fa-user"></i> Send to
+          </label>
+          <input type="email" placeholder="Enter email">
+
+          <button class="modal-pay" onclick="closeModal()">
+            PAY <i class="fa fa-check"></i>
+          </button>
+
+          <button class="modal-close-btn" onclick="closeModal()">
+            Close <i class="fa fa-remove"></i>
+          </button>
+
+          
+        </div>
       </div>
-     </div>
-    
+    </div>
+
+
+    <div id="canvasLogoWrapper">
+      <canvas id="myCanvas" width="556" height="440"></canvas>
+      <script src="js/canvas.js"></script>
+    </div>
+
+    <!-- The Contact Section -->
+    <section class="contact-section fade-in" id="contact">
+      <h2 class="title">CONTACT</h2>
+
+
+      <div class="contact">
+        <div class="contactInfo">
+          <div><i class="fa fa-map-marker"></i> Nova Gorica, Slovenija </div>
+          <div><i class="fa fa-phone"></i> Phone: +386 15 303 000<br></div>
+          <div><i class="fa fa-envelope"></i> Email: banddtn@gmail.com <br></div>
+        </div>
+
+        <div class="message">
+          <form id="contactForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Message" required>
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- End Page Content -->
   </div>
-  
-<!-- End Page Content -->
-</div>
 
-<!-- Logo -->
-
+  <!-- Footer -->
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="footer">
+  <div class="social-icons">
+    <a href="https://www.facebook.com/banddtn" target="_blank"> <i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/dtnband/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@dtnband" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="https://open.spotify.com/artist/67cn0krleqY81Doxj2WFBy?si=jbFIpEVURwaBiP5LdX_-cw" target="_blank"><i class="fa fa-spotify"></i></a>
+  </div>
+  <p class="footer-text">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
 </footer>
 
-<script>
-  //Canvas
-window.onload = function() {
+  <script>
+    //Canvas
+    window.onload = function () {
       const canvas = document.getElementById("myCanvas");
       const ctx = canvas.getContext("2d");
 
       // nariši DTN ikono
       SVGIcons["DTN_vektor.svg"].draw(ctx);
-  };
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+    };
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
+    // Autonmatic slideshow
+    let index = 0;
+    const slides = document.querySelectorAll('.autoSlide');
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+    function autoCarousel() {
+      slides.forEach(slide => slide.classList.remove('active'));
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+      slides[index].classList.add('active');
 
+      index++;
+      if (index >= slides.length) index = 0;
+
+      setTimeout(autoCarousel, 4000);
+    }
+
+    autoCarousel();
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleMenu() {
+      const menu = document.getElementById('navDemo');
+      menu.classList.toggle('show');
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    function openModal() {
+      document.getElementById('ticketModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('ticketModal').style.display = 'none';
+    }
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

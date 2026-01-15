@@ -1,7 +1,4 @@
 
-// Pokliči funkcijo, da se ikona nariše
-
-
 var SVGIcons = {
 "DTN_vektor.svg": {
  draw: function(ctx){
@@ -19,9 +16,10 @@ ctx.font="   15px ''";
 ctx.translate(-271.09352,-267.82733);
 ctx.save();
 
-// D - Bela obroba 
-ctx.fillStyle="#ff0000ff";
-ctx.fillStyle="rgba(255, 0, 0, 1)";
+
+
+// D - white border
+ctx.fillStyle="rgb(255, 255, 255)";
 ctx.strokeStyle="rgba(0,0,0,0)";
 ctx.font="   15px ''";
 ctx.beginPath(); 
@@ -64,7 +62,7 @@ ctx.lineTo(503,306);
 ctx.lineTo(561,339);
 ctx.closePath(); 
 
-// D - črna obroba
+// D - black border
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
@@ -116,13 +114,13 @@ ctx.lineTo(489,291);
 ctx.lineTo(567,336);
 ctx.closePath();
 
-// T - Bela obroba
+// T - white border
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
 ctx.save();
-ctx.fillStyle="#ff0000ff";
-ctx.fillStyle="rgba(255, 0, 0, 1)";
+ctx.fillStyle="rgb(255, 255, 255)";
+ctx.fillStyle="rgb(255, 255, 255)";
 ctx.strokeStyle="rgba(0,0,0,0)";
 ctx.font="   15px ''";
 ctx.beginPath();
@@ -167,7 +165,7 @@ ctx.lineTo(1072,275);
 ctx.lineTo(1127,130);
 ctx.closePath();
 
-// T - črna obroba
+// T - black border
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
@@ -214,13 +212,13 @@ ctx.lineTo(1060,215);
 ctx.lineTo(1066,273);
 ctx.closePath();
 
-// N - Bela obroba
+// N - Whtite border
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
 ctx.save();
-ctx.fillStyle="#ff0000ff";
-ctx.fillStyle="rgba(255, 0, 0, 1)";
+ctx.fillStyle="rgb(255, 255, 255)";
+ctx.fillStyle="rgb(255, 255, 255)";
 ctx.strokeStyle="rgba(0,0,0,0)";
 ctx.font="   15px ''";
 ctx.beginPath();
@@ -261,7 +259,7 @@ ctx.lineTo(912,226);
 ctx.lineTo(1121,103);
 ctx.closePath();
 
-// N - Črna Obroba
+// N - black border
 ctx.fill("nonzero");
 ctx.stroke();
 ctx.restore();
