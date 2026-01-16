@@ -514,13 +514,21 @@ html {
 
 
 /* --CONTACT-- */
-
+.logoContactWrapper{
+  width:100vw;
+  height:60vh;
+  position:relative;
+  left:0;
+  display: flex;
+  align-items: center;
+}
 .contact-section {
   border: #C10000 2px solid;
   border-radius: 5px;
   background: #111;
   transition: border 0.5s;
-  max-width: 60%;
+  max-width: 60vw;
+  width:60vw;
   margin: 0 auto;
   margin-bottom: 4vh;
   padding: 4rem 1.5rem;
@@ -530,7 +538,7 @@ html {
 }
 
 #canvasLogoWrapper {
-  position: fixed;
+  position: absolute;
   top: 50%;
   transform: translate(-550%, -50%);
   transition: transform 0.6s ease;
