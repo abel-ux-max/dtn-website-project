@@ -51,7 +51,7 @@ html {
 }
 
 .nav-item:hover {
-  background: #c10000;
+  background: #9f0000;
 }
 
 /* TOGGLE */
@@ -91,7 +91,7 @@ html {
 }
 
 .dropdown-content a:hover {
-  background: #c10000;
+  background: #9f0000;
 }
 
 .dropdown:hover .dropdown-content {
@@ -121,7 +121,7 @@ html {
 }
 
 .mobile-menu a:hover {
-  background: #c10000;
+  background: #9f0000;
   color: #ffffff;
 }
 
@@ -238,7 +238,7 @@ html {
 
 .members img:hover {
   opacity: 0.75;
-  border: #C10000 2px solid;
+  border: #9f0000 2px solid;
 }
 
   /* Media */
@@ -246,7 +246,7 @@ html {
 
 .media {
   position: relative;
-  width: 106%;
+  width: 106;
   height: 50vh;
   overflow: hidden;
   display: flex;
@@ -277,6 +277,8 @@ html {
   justify-content: center;
   align-items: center;
   z-index: 1; 
+  opacity:0.7;
+  transition: opacity 0.3s;
 }
 /* Spotify iframe styling */
 .streaming { 
@@ -284,6 +286,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+.media-div:hover{
+  opacity:1;
 }
 
 
@@ -304,7 +310,7 @@ html {
   text-align: center;
   letter-spacing: 0.15em;
   margin-bottom: 0.5rem;
-  color: #C10000;
+  color: #9f0000;
   font-weight: 400;
   text-transform: uppercase;
   opacity: 1;
@@ -336,7 +342,7 @@ html {
 
 .city-card:hover {
   transform: translateY(-3px);
-  border: 2px solid #C10000;
+  border: 2px solid #9f0000;
 }
 
 /* IMAGE */
@@ -373,8 +379,8 @@ html {
 
 .ticket-btn {
   background: transparent;
-  border: 2px solid #C10000;
-  color: #C10000;
+  border: 2px solid #9f0000;
+  color: #9f0000;
   padding: 0.6rem 1.2rem;
   cursor: pointer;
   font-weight: 600;
@@ -382,7 +388,7 @@ html {
 }
 
 .ticket-btn:hover {
-  background: #C10000;
+  background: #9f0000;
   color: #fff;
 }
 
@@ -410,7 +416,7 @@ html {
   max-width: 500px;
   margin: 10vh auto;
   padding: 2.5rem 2rem;
-  border: 2px solid #C10000;
+  border: 2px solid #9f0000;
   animation: modalSlide 0.4s ease;
 }
 
@@ -443,7 +449,7 @@ html {
 }
 
 .modal-close:hover {
-  color: #C10000;
+  color: #9f0000;
 }
 
 /* TITLE */
@@ -475,15 +481,15 @@ html {
 
 .modal-body input:focus {
   outline: none;
-  border-color: #C10000;
+  border-color: #9f0000;
 }
 
 /* BUTTONS */
 .modal-pay {
   margin-top: 1.5rem;
-  background: #C10000;
+  background: #9f0000;
   color: #fff;
-  border: 2px solid #C10000;
+  border: 2px solid #9f0000;
   padding: 0.8rem;
   font-weight: 600;
   cursor: pointer;
@@ -496,7 +502,7 @@ html {
 
 .modal-close-btn {
   background: none;
-  border: 2px solid #C10000;
+  border: 2px solid #9f0000;
   color: #ffffff;
   padding: 0.8rem;
   cursor: pointer;
@@ -505,7 +511,7 @@ html {
 }
 
 .modal-close-btn:hover {
-  background: #C10000;
+  background: #9f0000;
   color: #fff;
 }
 
@@ -523,7 +529,7 @@ html {
   align-items: center;
 }
 .contact-section {
-  border: #C10000 2px solid;
+  border: #9f0000 2px solid;
   border-radius: 5px;
   background: #111;
   transition: border 0.5s;
@@ -564,7 +570,7 @@ html {
   
 }
 .contactInfo:hover{
-  border: #C10000 2px solid;
+  border: #9f0000 2px solid;
 }
 .message form {
   display: flex;
@@ -584,14 +590,14 @@ html {
 
 .message input:focus {
   outline: none;
-  border-color: #C10000;
+  border-color: #9f0000;
 }
 
 .message button {
   margin-top: 1.5rem;
-  background: #C10000;
+  background: #9f0000;
   color: #fff;
-  border: 2px solid #C10000;
+  border: 2px solid #9f0000;
   padding: 0.8rem;
   font-weight: 600;
   cursor: pointer;
@@ -615,7 +621,7 @@ html {
   padding: 4rem 1rem;
   text-align: center;
   font-size: 2rem; /* for icons */
-  background: #C10000; /* optional dark background */
+  background: #9f0000; /* optional dark background */
   color: #fff;
 }
 
