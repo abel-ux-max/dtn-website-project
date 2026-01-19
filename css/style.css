@@ -164,8 +164,9 @@ html {
   height: auto;
   z-index: 10;
   pointer-events: visibleStroke;
-  filter: drop-shadow(0 8px 20px rgba(46, 46, 46, 0.616));
+  filter: drop-shadow(0 8px 20px #7777771f);
   transition: filter 0.4s ease-in-out;
+  
 }
 
 #container:hover {
@@ -177,6 +178,7 @@ html {
   width: 100%;
   height: 91vh;
   overflow: hidden;
+  
 }
 
 .autoSlide {
@@ -194,7 +196,10 @@ html {
 .autoSlide img {
   width: 100%;
   display: block;
+  opacity: 0.7;
+  filter: blur(2px);
 }
+
 
 .autoCaption {
   position: absolute;
@@ -246,11 +251,11 @@ html {
 
 .media {
   position: relative;
-  width: 106;
+  width: 128%;
+  left: -14%;
   height: 50vh;
   overflow: hidden;
   display: flex;
-  
   background-image: url('../img/DTN_logotip.png');
   background-repeat: repeat-x;
   background-size: auto 100%;  
@@ -267,6 +272,7 @@ html {
 }
 
 /* Overlay container for iframe */
+
 .media-div {
   position: absolute;
   top: 0;
