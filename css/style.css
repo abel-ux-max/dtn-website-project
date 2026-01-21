@@ -4,12 +4,14 @@
   margin: 0;
   padding: 0;
   color: white;
+  
 }
 
 body,
 html {
   background-color: rgba(0, 0, 0, 100);
   font-family: "Source Sans 3", sans-serif;
+  overflow-x: hidden;
 }
 
 /* FADE IN */
@@ -121,7 +123,7 @@ html {
 }
 
 .mobile-menu a:hover {
-  background: #9f0000;
+  background: rgb(159, 0, 0);
   color: #ffffff;
 }
 
@@ -151,7 +153,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 500px;
-  filter: saturate(0);
 }
 
 #container {
@@ -166,11 +167,19 @@ html {
   pointer-events: visibleStroke;
   filter: drop-shadow(0 8px 20px #7777771f);
   transition: filter 0.4s ease-in-out;
-  
+  animation: beat  2.5s ease-in-out infinite;
 }
 
-#container:hover {
-  filter: drop-shadow(0 8px 20px #8a8a8a);
+@keyframes beat {
+     0% {
+    filter: drop-shadow(0 0 6px rgba(195, 0, 0, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 18px rgba(195, 0, 0, 0.8));
+  }
+  100% {
+    filter: drop-shadow(0 0 6px rgba(195, 0, 0, 0.4));
+  }
 }
 
 .autoSlideshow {
@@ -197,7 +206,7 @@ html {
   width: 100%;
   display: block;
   opacity: 0.7;
-  filter: blur(2px);
+  filter: saturate(0);
 }
 
 
