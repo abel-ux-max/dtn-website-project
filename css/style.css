@@ -555,8 +555,13 @@ html {
   top: 50%;
   transform: translate(-550%, -50%);
   transition: transform 0.6s ease;
-  width: 556;
-  height: 440;
+  width: 556px;
+  height: 440px;
+}
+#myCanvas {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .contact {

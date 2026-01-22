@@ -117,3 +117,39 @@ document.getElementById("openCredits").addEventListener("click", function () {
     width: 400,
   });
 });
+// Autonmatic slideshow
+    let index = 0;
+    const slides = document.querySelectorAll('.autoSlide');
+
+    function autoCarousel() {
+      slides.forEach(slide => slide.classList.remove('active'));
+
+      slides[index].classList.add('active');
+
+      index++;
+      if (index >= slides.length) index = 0;
+
+      setTimeout(autoCarousel, 4000);
+    }
+
+    autoCarousel();
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleMenu() {
+      const menu = document.getElementById('navDemo');
+      menu.classList.toggle('show');
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    function openModal() {
+      document.getElementById('ticketModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('ticketModal').style.display = 'none';
+    }
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }

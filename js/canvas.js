@@ -1,3 +1,37 @@
+const SVG_WIDTH = 1110.7292 * 0.5;
+const SVG_HEIGHT = 879.24933 * 0.5;
+
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+function draw() {
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, rect.width, rect.height);
+
+  const scale = Math.min(
+    rect.width / SVG_WIDTH,
+    rect.height / SVG_HEIGHT
+  );
+
+  ctx.translate(
+    (rect.width - SVG_WIDTH * scale) / 2,
+    (rect.height - SVG_HEIGHT * scale) / 2
+  );
+
+  ctx.scale(scale, scale);
+
+  SVGIcons["DTN_vektor.svg"].draw(ctx);
+}
+
+window.addEventListener("load", draw);
+window.addEventListener("resize", draw);
 
 
 var SVGIcons = {

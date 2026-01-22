@@ -1,6 +1,6 @@
 # DTN – Band Website
 
-Unofficial website for the band **DTN**.  
+Official website for the band **DTN**.  
 The site is built from scratch using **vanilla HTML, CSS, and JavaScript**, without frameworks, focusing on performance, clean visuals, and custom animations.
 
 ---
