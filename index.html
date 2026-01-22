@@ -58,7 +58,7 @@
   </div>
 
   <!-- Page content -->
-  <div class="main page-wrapper" >
+  <div class="main page-wrapper">
     <div id="slideshow">
       <div id="container">
         <svg id="logotip" width="100%" height="100%" viewBox="0 0 1110.7292 879.24933">
@@ -155,7 +155,7 @@
             src="https://open.spotify.com/embed/track/0K9anDxCcyqqUvicfZs65V?utm_source=generator" width="25%"
             height="100%" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"> </iframe>
-            
+
         </div>
       </div>
     </section>
@@ -239,33 +239,33 @@
 
 
 
-      <!-- The Contact Section -->
-      <div class="logoContactWrapper">
-        <div id="canvasLogoWrapper">
-          <canvas id="myCanvas" width="556" height="440"></canvas>
-          <script src="js/canvas.js"></script>
-        </div>
-
-        <section class="contact-section fade-in" id="contact">
-          <h2 class="title">CONTACT</h2>
-          <div class="contact">
-            <div class="contactInfo">
-              <div><i class="fa fa-map-marker"></i> Nova Gorica, Slovenija </div>
-              <div><i class="fa fa-phone"></i> Phone: +386 00 000 000<br></div>
-              <div><i class="fa fa-envelope"></i> Email: banddtn@gmail.com <br></div>
-            </div>
-
-            <div class="message">
-              <form id="contactForm">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Message" required>
-                <button type="submit">SEND</button>
-              </form>
-            </div>
-          </div>
-        </section>
+    <!-- The Contact Section -->
+    <div class="logoContactWrapper">
+      <div id="canvasLogoWrapper">
+        <canvas id="myCanvas" width="556" height="440"></canvas>
+        <script src="js/canvas.js"></script>
       </div>
+
+      <section class="contact-section fade-in" id="contact">
+        <h2 class="title">CONTACT</h2>
+        <div class="contact">
+          <div class="contactInfo">
+            <div><i class="fa fa-map-marker"></i> Nova Gorica, Slovenija </div>
+            <div><i class="fa fa-phone"></i> Phone: +386 00 000 000<br></div>
+            <div><i class="fa fa-envelope"></i> Email: banddtn@gmail.com <br></div>
+          </div>
+
+          <div class="message">
+            <form id="contactForm">
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+              <input type="text" placeholder="Message" required>
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
 
 
     <!-- End Page Content -->
@@ -288,13 +288,42 @@
 
   <script>
     //Canvas
-    window.onload = function () {
+    const SVG_WIDTH = 556;
+    const SVG_HEIGHT = 440;
+
+    function drawCanvas() {
       const canvas = document.getElementById("myCanvas");
       const ctx = canvas.getContext("2d");
 
-      // nariši DTN ikono
+      const dpr = window.devicePixelRatio || 1;
+
+      const cssWidth = canvas.clientWidth;
+      const cssHeight = canvas.clientHeight;
+
+      canvas.width = cssWidth * dpr;
+      canvas.height = cssHeight * dpr;
+
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.scale(dpr, dpr);
+      ctx.clearRect(0, 0, cssWidth, cssHeight);
+
+      const scale = Math.min(
+        cssWidth / SVG_WIDTH,
+        cssHeight / SVG_HEIGHT
+      );
+
+      ctx.translate(
+        (cssWidth - SVG_WIDTH * scale) / 2,
+        (cssHeight - SVG_HEIGHT * scale) / 2
+      );
+
+      ctx.scale(scale, scale);
+
       SVGIcons["DTN_vektor.svg"].draw(ctx);
-    };
+    }
+
+    window.addEventListener("load", drawCanvas);
+    window.addEventListener("resize", drawCanvas);
 
     // Autonmatic slideshow
     let index = 0;

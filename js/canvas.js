@@ -1,4 +1,5 @@
 
+
 var SVGIcons = {
 "DTN_vektor.svg": {
  draw: function(ctx){

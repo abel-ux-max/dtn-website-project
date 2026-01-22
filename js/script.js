@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
 
   if (scroll >= bottom) {
     // smo na dnu
-    contact.style.transform = 'translateX(30%)';
+    contact.style.transform = 'translateX(25%)';
     logo.style.transform = 'translate(5%, -50%)';
   } else {
     // skrij

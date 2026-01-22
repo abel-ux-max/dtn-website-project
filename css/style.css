@@ -165,22 +165,14 @@ html {
   height: auto;
   z-index: 10;
   pointer-events: visibleStroke;
-  filter: drop-shadow(0 8px 20px #7777771f);
+  filter: drop-shadow(0 0 18px rgba(195, 0, 0, 0.6));
   transition: filter 0.4s ease-in-out;
-  animation: beat  2.5s ease-in-out infinite;
+}
+#container:hover{
+  filter: drop-shadow(0 0 25px rgba(195, 0, 0, 0.8));
 }
 
-@keyframes beat {
-     0% {
-    filter: drop-shadow(0 0 6px rgba(195, 0, 0, 0.4));
-  }
-  50% {
-    filter: drop-shadow(0 0 18px rgba(195, 0, 0, 0.8));
-  }
-  100% {
-    filter: drop-shadow(0 0 6px rgba(195, 0, 0, 0.4));
-  }
-}
+
 
 .autoSlideshow {
   position: relative;
@@ -206,7 +198,7 @@ html {
   width: 100%;
   display: block;
   opacity: 0.7;
-  filter: saturate(0);
+  filter: saturate(0) blur(2px);
 }
 
 
@@ -563,6 +555,8 @@ html {
   top: 50%;
   transform: translate(-550%, -50%);
   transition: transform 0.6s ease;
+  width: 556;
+  height: 440;
 }
 
 .contact {
